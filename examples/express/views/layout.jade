@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(property='og:image', content='#{flayyer}')
+    meta(property='twitter:image', content='#{flayyer}')
+    meta(property='twitter:card', content='summary_large_image')
+  body
+    block content
+    p This is your current Flayyer URL:
+    pre #{flayyer}

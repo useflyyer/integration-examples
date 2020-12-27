@@ -1,4 +1,4 @@
-# Flayyer Examples
+# Flayyer — Integration examples
 
 Some examples with popular technologies
 

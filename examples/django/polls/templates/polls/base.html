@@ -1,0 +1,35 @@
+{% load static %}
+{% load meta %}
+
+<!DOCTYPE html>
+<html {% meta_namespaces_schemaorg %} lang="en">
+<head {% meta_namespaces %}>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+
+  {% include 'meta/meta.html' %}
+
+  {% block head %}
+  {% endblock %}
+</head>
+
+<body>
+  <nav>
+    {% block nav %}
+    <ul style="list-style-type: none;">
+      <li>
+        <a href="{% url 'polls:index' %}">
+          Home
+        </a>
+      </li>
+    </ul>
+    {% endblock %}
+
+    <hr />
+  </nav>
+
+  <main id="content">
+    {% block content %}
+    {% endblock %}
+  </main>
+</body>
+</html>

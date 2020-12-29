@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "exampleflayyer"
+version = "0.1.0"
+description = ""
+authors = ["Patricio López Juri <patricio@flayyer.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+flayyer = "^1.1.2"
+django-meta = "^2.0.0"
+Django = "^3.1.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

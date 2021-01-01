@@ -15,7 +15,7 @@ cd my-docusaurus
 yarn add @flayyer/docusaurus-preset
 ```
 
-On your docusaurus.config.js add @flayyer/docusaurus-preset at the end of your preset array:
+On your `docusaurus.config.js` add `@flayyer/docusaurus-preset` at the end of your `presets` array:
 
 ```js
 {

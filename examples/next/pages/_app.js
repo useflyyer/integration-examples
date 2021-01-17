@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useRouter } from "next/router";
-import Flayyer from "@flayyer/flayyer"
+import { Flayyer } from "@flayyer/flayyer"
 
 import '../styles/globals.css'
 

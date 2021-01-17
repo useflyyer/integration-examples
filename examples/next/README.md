@@ -22,7 +22,7 @@ We recommend create a default flayyer in the _app.js of you app, so every page h
 // pages/_app.js
 import Head from 'next/head';
 import { useRouter } from "next/router";
-import Flayyer from "@flayyer/flayyer"
+import { Flayyer } from "@flayyer/flayyer"
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();

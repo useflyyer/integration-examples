@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Flayyer from "@flayyer/flayyer";
+import { Flayyer } from "@flayyer/flayyer";
 
 export default function PokemonIndex({ data, ...props }) {
   const router = useRouter();

@@ -1,5 +1,5 @@
 import React from "react"
-import Flayyer from "@flayyer/flayyer"
+import { Flayyer } from "@flayyer/flayyer"
 import { Helmet } from "react-helmet"
 
 // styles

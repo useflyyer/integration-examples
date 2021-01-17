@@ -8,8 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@flayyer/flayyer": "^1.2.0",
-    "next": "10.0.4",
+    "@flayyer/flayyer": "^1.3.0",
+    "next": "10.0.5",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   }

@@ -1422,37 +1422,37 @@
     url "^0.11.0"
     webpack-sources "^1.4.3"
 
-"@flayyer/docusaurus-preset@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@flayyer/docusaurus-preset/-/docusaurus-preset-0.1.2.tgz#21f62e767194e6b1d43cac6a7b92dfee59df0e7f"
-  integrity sha512-ixErNP2xR3J5wrDG0JrnAwtSkDbDjYMfs53/vLuuZeDlQk/wqi0EJvF1O8PgqkUVtbOhun9glI6/dBX4INOzyw==
+"@flayyer/docusaurus-preset@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@flayyer/docusaurus-preset/-/docusaurus-preset-0.1.3.tgz#908c47c65264ec0fdd19ea96b5cd8a47ee92bb12"
+  integrity sha512-aPRTIymHZf47rvbmGYdoRNRvfSa4EDdSrzKIkc5bmhh9cSALJa81E/Mw4a0lzct62mll2lgQnCORq5XHS12qfg==
   dependencies:
-    "@flayyer/docusaurus-theme" "^0.1.2"
+    "@flayyer/docusaurus-theme" "^0.1.3"
     debug "^4.3.1"
 
-"@flayyer/docusaurus-theme@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@flayyer/docusaurus-theme/-/docusaurus-theme-0.1.2.tgz#8133bbce189caac5ef557268ac5ac40e8edde69c"
-  integrity sha512-8ZQTzi6FoPNYlSzxiaGYBEKRnZy0JeQruRhnE9MpYosL0pS7YTEOVwtrLG5Yd2CzovL59TaWFSSkCpxt3zaXZQ==
+"@flayyer/docusaurus-theme@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@flayyer/docusaurus-theme/-/docusaurus-theme-0.1.3.tgz#d991b299b611ea258d0a7b41c3620855af274dfe"
+  integrity sha512-t6tuxyqoV3SmVoIlT/ddjgmj56G4TMYi7PL7tbOJ+Stg6cUp1PMold1ujq3TVB19KvLrppKm19PQWaXZake1ng==
   dependencies:
-    "@flayyer/flayyer" "^1.2.0"
-    "@flayyer/flayyer-hook" "^1.2.1"
+    "@flayyer/flayyer" "^1.3.0"
+    "@flayyer/flayyer-hook" "^1.3.0"
     debug "^4.3.1"
     lodash "^4.17.20"
     templite "^1.1.0"
 
-"@flayyer/flayyer-hook@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@flayyer/flayyer-hook/-/flayyer-hook-1.2.1.tgz#6a0bc905c3e90dcc87a36470c8e1d9c46434683f"
-  integrity sha512-Krmb9JkYXQLv6l9P8mwk/eFhDMGFq/QQoKrQEUXjIbHj5K/5EIuZDBeKZ7I/l5H4MHJtjyeJGG/YXGJ7TbQ+Ew==
+"@flayyer/flayyer-hook@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@flayyer/flayyer-hook/-/flayyer-hook-1.3.0.tgz#18bf21b7412fc1fc1f332cf89820d3423eea149b"
+  integrity sha512-03mCwNG57sz2qW/3bRDiBfr/auGIcHjmx6bXv6qNltjrFMbM/Ors2vYjNja+ORK1XeK0la+XHzCNhRDyjxK2SA==
 
-"@flayyer/flayyer@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@flayyer/flayyer/-/flayyer-1.2.0.tgz#6f085d7081ebfe133bd90b60c9ffc8cc6515219d"
-  integrity sha512-IeIEta30GIeyCPY/u6n21EcMRbrgWmEeL9nLC+x8lWQCKbGvpqH4PBhFgGuLz5wT2zq/tpu6Xq/wGTyiLJKy7g==
+"@flayyer/flayyer@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@flayyer/flayyer/-/flayyer-1.3.0.tgz#2915bec796b7a167d38cb345bb1029839685d7f4"
+  integrity sha512-KTXdF4DClP6z7+otwmubkzAWeHdEl9V54CXbosZln0WM4fU/MBG8F78NqqTjsERevsgoUxZFDdVvpW3mA3DHEg==
   dependencies:
     "@types/qs" "^6.9.5"
-    qs "^6.9.4"
+    qs "^6.9.6"
 
 "@hapi/hoek@^9.0.0":
   version "9.1.1"
@@ -8083,10 +8083,10 @@ qs@6.7.0:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
-qs@^6.9.4:
-  version "6.9.4"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.9.4.tgz#9090b290d1f91728d3c22e54843ca44aea5ab687"
-  integrity sha512-A1kFqHekCTM7cz0udomYUoYNWjBebHm/5wzU/XqrBRBNWectVH0QIiN+NEcZ0Dte5hvzHwbr8+XQmguPhJ6WdQ==
+qs@^6.9.6:
+  version "6.9.6"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.9.6.tgz#26ed3c8243a431b2924aca84cc90471f35d5a0ee"
+  integrity sha512-TIRk4aqYLNoJUbd+g2lEdz5kLWIuTMRagAXxl78Q0RiVjAOugHmeKNGdd3cwo/ktpf9aL9epCfFqWDEKysUlLQ==
 
 query-string@^4.1.0:
   version "4.3.4"

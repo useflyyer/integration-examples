@@ -1,4 +1,4 @@
-const Flayyer = require("@flayyer/flayyer").default;
+const { Flayyer } = require("@flayyer/flayyer");
 const express = require('express');
 const router = express.Router();
 

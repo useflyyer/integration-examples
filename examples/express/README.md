@@ -24,7 +24,7 @@ Then add Flayyer on your routers, controllers and handlers. Example:
 // routes/index.js
 
 // Require `Flayyer` class constructor
-const Flayyer = require("@flayyer/flayyer").default;
+const { Flayyer } = require("@flayyer/flayyer");
 
 // Express stuff
 const express = require('express');

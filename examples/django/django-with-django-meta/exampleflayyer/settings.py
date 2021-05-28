@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-from flayyer import Flayyer
+from flayyer import FlayyerAI
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'meta',
+    'meta',  # [Required] for your project if using `django-meta`
 ]
 
 MIDDLEWARE = [
@@ -122,22 +122,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# You can find your `project-slug` in your dashboard: https://flayyer.com/auth/login
+# If you don't have a project yet, create one here: https://flayyer.com/get-started
 FLAYYER_DEFAULT = {
-    'tenant': "my-company",
-    'deck': "my-project",
-    'template': "main",
+    'project': "your-project-slug",
 }
 
-META_SITE_PROTOCOL='https'
-META_SITE_DOMAIN='example.com'
-META_SITE_NAME='Flayyer Example'
-META_INCLUDE_KEYWORDS=['flayyer', 'django', 'seo']
-META_DEFAULT_KEYWORDS=META_INCLUDE_KEYWORDS
-META_USE_OG_PROPERTIES=True
-META_USE_TWITTER_PROPERTIES=True
-META_USE_SCHEMAORG_PROPERTIES=True
-META_USE_TITLE_TAG=True
-META_DEFAULT_IMAGE=Flayyer(**FLAYYER_DEFAULT).href()
-META_TWITTER_TYPE="summary_large_image"
-META_TWITTER_SITE="@example"
-META_TWITTER_AUTHOR="@example"
+# [Required]
+META_SITE_DOMAIN = 'example.com'
+META_USE_OG_PROPERTIES = True
+META_USE_TWITTER_PROPERTIES = True
+META_DEFAULT_IMAGE = FlayyerAI(**FLAYYER_DEFAULT).href()
+META_TWITTER_TYPE = "summary_large_image"

@@ -6,9 +6,8 @@ authors = ["Patricio López Juri <patricio@flayyer.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.6"
-flayyer = "^1.1.2"
-django-meta = "^2.0.0"
 Django = "^3.1.4"
+flayyer = "^1.2.0"
 
 [tool.poetry.dev-dependencies]
 

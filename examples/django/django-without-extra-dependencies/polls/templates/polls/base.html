@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+
+  <!-- Start meta-tags -->
+  <!-- [Required] -->
+  <meta property="og:image" content="{{ flayyer_href }}" />
+  <meta name="twitter:image" content="{{ flayyer_href }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- [Recommended] -->
+  <!-- <meta name="flayyer:default" content="your-original-og-image" /> -->
+  <!-- End meta-tags -->
+
+  {% block head %}
+  {% endblock %}
+</head>
+
+<body>
+  <nav>
+    {% block nav %}
+    <ul>
+      <li>
+        <a href="{% url 'polls:home' %}">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'polls:index' %}">
+          Polls
+        </a>
+      </li>
+    </ul>
+    {% endblock %}
+
+    <hr />
+  </nav>
+
+  <main id="content">
+    {% block content %}
+    {% endblock %}
+  </main>
+</body>
+</html>

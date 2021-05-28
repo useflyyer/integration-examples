@@ -2,11 +2,14 @@
 {% load meta %}
 
 <!DOCTYPE html>
-<html {% meta_namespaces_schemaorg %} lang="en">
-<head {% meta_namespaces %}>
+<html lang="en">
+<head>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
 
+  <!-- Start django-meta -->
+  <!-- [Required] -->
   {% include 'meta/meta.html' %}
+  <!-- End django-meta -->
 
   {% block head %}
   {% endblock %}

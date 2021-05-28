@@ -18,9 +18,9 @@ optional = false
 python-versions = ">=3.6"
 
 [package.dependencies]
-sqlparse = ">=0.2.2"
-pytz = "*"
 asgiref = ">=3.2.10,<4"
+pytz = "*"
+sqlparse = ">=0.2.2"
 
 [package.extras]
 argon2 = ["argon2-cffi (>=16.1.0)"]
@@ -42,14 +42,29 @@ docs = ["django (<3.1)"]
 
 [[package]]
 name = "flayyer"
-version = "1.1.2"
+version = "1.2.0"
 description = "FLAYYER.com helper classes and methods"
 category = "main"
 optional = false
 python-versions = ">=3.6,<4.0"
 
 [package.dependencies]
+PyJWT = ">=2.0.1,<3.0.0"
 typing-extensions = ">=3.7.4,<4.0.0"
+
+[[package]]
+name = "pyjwt"
+version = "2.1.0"
+description = "JSON Web Token implementation in Python"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+crypto = ["cryptography (>=3.3.1,<4.0.0)"]
+dev = ["sphinx", "sphinx-rtd-theme", "zope.interface", "cryptography (>=3.3.1,<4.0.0)", "pytest (>=6.0.0,<7.0.0)", "coverage[toml] (==5.0.4)", "mypy", "pre-commit"]
+docs = ["sphinx", "sphinx-rtd-theme", "zope.interface"]
+tests = ["pytest (>=6.0.0,<7.0.0)", "coverage[toml] (==5.0.4)"]
 
 [[package]]
 name = "pytz"
@@ -77,7 +92,7 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "typing-extensions"
-version = "3.7.4.3"
+version = "3.10.0.0"
 description = "Backported and Experimental Type Hints for Python 3.5+"
 category = "main"
 optional = false
@@ -86,7 +101,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6"
-content-hash = "25b8e98a424325c375e2779b01c94e329307d0673004953d76c27dc88e15d5ca"
+content-hash = "cd0c5c3f2b7da3e7d5138c1c93b613ec0c8f50638ddc6980d623877eda70ec03"
 
 [metadata.files]
 asgiref = [
@@ -102,8 +117,12 @@ django-meta = [
     {file = "django_meta-2.0.0-py2.py3-none-any.whl", hash = "sha256:25010157000fa2f1d1ed46e8739f43cfe00e40af199d913b230e52133b650da5"},
 ]
 flayyer = [
-    {file = "flayyer-1.1.2-py3-none-any.whl", hash = "sha256:27c319e0238a464fdd1d38739750b8e7eeba6db1c369f24ab4bbf814c13757eb"},
-    {file = "flayyer-1.1.2.tar.gz", hash = "sha256:b76c45841c36a92a8f53e4b0def414c9d046079cf018571dac83fd26913f86cf"},
+    {file = "flayyer-1.2.0-py3-none-any.whl", hash = "sha256:b6b505514b2b132c51e4f04a9095dcd8f83f5a8f013947e85ab664ba0c193c34"},
+    {file = "flayyer-1.2.0.tar.gz", hash = "sha256:0bc9f8f9a508b1f2797446406c0964c17e978e671087f31611c21658af6c0649"},
+]
+pyjwt = [
+    {file = "PyJWT-2.1.0-py3-none-any.whl", hash = "sha256:934d73fbba91b0483d3857d1aff50e96b2a892384ee2c17417ed3203f173fca1"},
+    {file = "PyJWT-2.1.0.tar.gz", hash = "sha256:fba44e7898bbca160a2b2b501f492824fc8382485d3a6f11ba5d0c1937ce6130"},
 ]
 pytz = [
     {file = "pytz-2020.5-py2.py3-none-any.whl", hash = "sha256:16962c5fb8db4a8f63a26646d8886e9d769b6c511543557bc84e9569fb9a9cb4"},
@@ -118,7 +137,7 @@ sqlparse = [
     {file = "sqlparse-0.4.1.tar.gz", hash = "sha256:0f91fd2e829c44362cbcfab3e9ae12e22badaa8a29ad5ff599f9ec109f0454e8"},
 ]
 typing-extensions = [
-    {file = "typing_extensions-3.7.4.3-py2-none-any.whl", hash = "sha256:dafc7639cde7f1b6e1acc0f457842a83e722ccca8eef5270af2d74792619a89f"},
-    {file = "typing_extensions-3.7.4.3-py3-none-any.whl", hash = "sha256:7cb407020f00f7bfc3cb3e7881628838e69d8f3fcab2f64742a5e76b2f841918"},
-    {file = "typing_extensions-3.7.4.3.tar.gz", hash = "sha256:99d4073b617d30288f569d3f13d2bd7548c3a7e4c8de87db09a9d29bb3a4a60c"},
+    {file = "typing_extensions-3.10.0.0-py2-none-any.whl", hash = "sha256:0ac0f89795dd19de6b97debb0c6af1c70987fd80a2d62d1958f7e56fcc31b497"},
+    {file = "typing_extensions-3.10.0.0-py3-none-any.whl", hash = "sha256:779383f6086d90c99ae41cf0ff39aac8a7937a9283ce0a414e5dd782f4c94a84"},
+    {file = "typing_extensions-3.10.0.0.tar.gz", hash = "sha256:50b6f157849174217d0656f99dc82fe932884fb250826c18350e159ec6cdf342"},
 ]

@@ -1,6 +1,6 @@
 # example-django
 
-This example has one required dependency: [`flayyer`](https://github.com/flayyer/flayyer-python)
+This example has no extra dependencies, it only uses [`flayyer`](https://github.com/flayyer/flayyer-python) to generate FlayyerAI smart image links.
 
 **Tip: Look for `[Required]` with full search on your editor**
 

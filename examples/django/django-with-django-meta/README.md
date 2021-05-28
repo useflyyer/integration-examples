@@ -1,6 +1,6 @@
 # example-django
 
-This example uses `django-meta` to handle meta-tags.
+This example uses `django-meta` to handle meta-tags. If you don't wanna use this extra dependency, check the example [django-without-extra-dependencies](https://github.com/flayyer/integration-examples/tree/main/examples/django/django-without-extra-dependencies)
 
 You can further understand how to handle meta-tags with `django-meta` [here](https://django-meta.readthedocs.io/en/latest/installation.html).
 

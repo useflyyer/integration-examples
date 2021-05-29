@@ -1,5 +1,16 @@
 # example-rails
 
+For development, run:
+
+```bash
+bundle install
+rails s
+```
+
+Then go to http://localhost:3000
+
+---
+
 Created with the settings for a minimal Ruby on Rails app:
 
 ```bash

@@ -2,12 +2,12 @@ class ApplicationController < ActionController::Base
   before_action :set_flayyer
 
   def set_flayyer(&block)
-    flayyer = Flayyer::FlayyerURL.create(&block)
-    flayyer.tenant = "my-company" unless flayyer.tenant.present?
-    flayyer.deck = "my-project" unless flayyer.deck.present?
-    flayyer.template = "main" unless flayyer.template.present?
-    image_src = flayyer.href.html_safe # https://github.com/flayyer/flayyer-ruby#ruby-on-rails
+    flayyer = Flayyer::FlayyerAI.create(&block)
+    flayyer.project = "your-project-slug"
+    flayyer.path = request.path
 
+    # use html_safe to prevent double serialization
+    image_src = flayyer.href.html_safe
     social_image = {
       _: image_src,
     }

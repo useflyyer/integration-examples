@@ -2,6 +2,6 @@
 
 Some examples with popular technologies
 
-Read our [documentation](https://docs.flayyer.com/docs) and [guides](https://docs.flayyer.com/guides) for more information and advanced features.
+Read our [integration guides](https://docs.flayyer.com/guides/get-started) and [creating custom templates documentation](https://docs.flayyer.com/docs).
 
 **Feel free to contribute 😃**
